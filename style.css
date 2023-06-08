@@ -1,0 +1,8 @@
+body {
+  display: flex;
+}
+#left {
+  background-image: url(images/john-hernandez-IL-fBBnF-GU-unsplash.jpg);
+  background-size: cover;
+  height: 100%;
+}
