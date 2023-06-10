@@ -16,13 +16,17 @@ function passwordMatch(p1, p2) {
   if (p1 != p2) {
     input1.style.outline = "1px solid firebrick";
     input2.style.outline = "1px solid firebrick";
-    document.getElementsByClassName("message").style.color = "red";
-    document.getElementsByClassName("message").innerHTML = "Does not match";
+    document.getElementById("message1").style.color = "red";
+    document.getElementById("message1").innerHTML = "Does not match";
+    document.getElementById("message2").style.color = "red";
+    document.getElementById("message2").innerHTML = "Does not match";
   } else {
     input1.style.outline = "none";
     input2.style.outline = "none";
-    document.getElementsByClassName("message").style.color = "green";
-    document.getElementsByClassName("message").innerHTML = "Matching";
+    document.getElementById("message1").style.color = "green";
+    document.getElementById("message1").innerHTML = "Matching";
+    document.getElementById("message2").style.color = "green";
+    document.getElementById("message2").innerHTML = "Matching";
   }
   return;
 }
